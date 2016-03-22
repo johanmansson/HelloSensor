@@ -10,7 +10,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener {
+public class AccelerometerActivity extends AppCompatActivity implements SensorEventListener {
 
     private SensorManager SM;
     private Sensor mySensor;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_accelerometer);
 
 
         // Create Sensor Manager
