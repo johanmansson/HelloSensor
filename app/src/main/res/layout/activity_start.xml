@@ -8,34 +8,46 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.johanmansson.hellosensor.StartActivity"
-    android:background="#c5cae9">
+    android:background="#1d2326">
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:text="Accelerometer"
         android:id="@+id/button1"
-        android:background="#3f51b5"
-        android:layout_marginTop="49dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
+        android:background="#e25741"
         android:textSize="20dp"
         android:typeface="sans"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:text="Compass"
         android:id="@+id/button2"
-        android:background="#3f51b5"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/button1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:background="#e25741"
         android:textSize="20dp"
         android:typeface="sans"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+
+        android:scaleType="center"
+        android:background="@mipmap/gyro"
+
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
 </RelativeLayout>

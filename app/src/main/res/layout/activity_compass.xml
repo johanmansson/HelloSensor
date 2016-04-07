@@ -8,12 +8,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.johanmansson.hellosensor.CompassActivity"
-    android:background="#c5cae9">
+    android:background="#1d2326">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/imageView"
+
+        android:scaleType="center"
+        android:background="@mipmap/compass1"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/imageView2"
 
         android:scaleType="center"
         android:background="@mipmap/compass2"
@@ -24,14 +35,15 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:id="@+id/textViewD"
         android:typeface="sans"
         android:textIsSelectable="true"
         android:textAlignment="center"
+        android:autoText="false"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="28dp" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
